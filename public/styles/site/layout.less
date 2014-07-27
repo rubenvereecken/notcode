@@ -1,3 +1,5 @@
+@import "../bootstrap/mixins.less";
+
 #header {
 	margin-top: 30px;
 }
@@ -17,12 +19,16 @@
 
 
 #info {
-  float: left;
   border: 1px solid darkgrey;
   padding: 8px;
   background-color: #e5e5e5;
   border-radius: 5px;
-  margin: 0px 10px 10px 10px;
+  width: 220px;
+
+  @media (min-width: @screen-lg-min) {
+    float: left;
+    margin: 0px 10px 10px 10px;
+  }
 
   > .img-wrapper {
     > img {
@@ -40,4 +46,9 @@
       margin: 0px 2px;
     }
   }
+}
+
+
+.page-title {
+  max-height: 5em;
 }
