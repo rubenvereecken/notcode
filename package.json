@@ -5,8 +5,9 @@
   "dependencies": {
     "keystone": "~0.2.22",
     "async": "~0.9.0",
-    "underscore": "~1.6.0",
-    "dotenv": "0.4.0"
+    "lodash": "~2.4.1",
+    "dotenv": "0.4.0",
+    "coffee-script": null
   },
   "devDependencies": {
     "grunt": "~0.4.4",
