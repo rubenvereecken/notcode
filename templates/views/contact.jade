@@ -2,7 +2,7 @@ extends ../layouts/default
 
 block intro
 	.container
-		h1 Contact Us
+		h1 Get in touch
 		
 block content
 	.container
@@ -18,11 +18,8 @@ block content
 					.form-group(class=validationErrors.email ? 'has-error' : null)
 						label Email
 						input(type='email', name='email', value=formData.email).form-control
-					.form-group
-						label Phone
-						input(type='text', name='phone', value=formData.phone, placeholder='(optional)').form-control
 					.form-group(class=validationErrors.enquiryType ? 'has-error' : null)
-						label What are you contacting us about?
+						label What's up?
 						select(name='enquiryType').form-control
 							option(value='') (select one)
 							each type in enquiryTypes
